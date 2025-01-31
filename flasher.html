@@ -266,11 +266,11 @@ function downloadFile(file) {
     
     // Define a URL base com base na seleção
     const baseUrl = betaSelected 
-        ? "https://github.com/pr3y/Bruce/raw/refs/heads/WebPage/BetaRelease/" 
-        : "https://github.com/pr3y/Bruce/raw/refs/heads/WebPage/LastRelease/";
+        ? "https://github.com/pr3y/Bruce/raw/refs/heads/WebPage/BetaRelease/Bruce-" 
+        : "https://github.com/pr3y/Bruce/raw/refs/heads/WebPage/LastRelease/Bruce-";
     
     // Monta a URL final do arquivo
-    const fileUrl = baseUrl + encodeURIComponent(file);
+    const fileUrl = baseUrl + encodeURIComponent(file) + ".bin";
     
     // Cria um link para download
     const link = document.createElement("a");
